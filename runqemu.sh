@@ -4,7 +4,6 @@
 #Author: Siddhant Jajoo.
 
 
-
 qemu-system-aarch64 \
     -M virt  \
     -cpu cortex-a53 -nographic -smp 1 \
