@@ -6,11 +6,11 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = 'bf3dffadf6d43fbf9c4f77916896f75c6993b8f2'
+AESD_ASSIGNMENTS_VERSION = '375d3d5e2bd065beef703e9167a7d2b1784d18b2'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
-AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-wangmengj.git'
+AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-jaeseolee0307.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
 AESD_ASSIGNMENTS_GIT_SUBMODULES = YES
 
@@ -27,7 +27,9 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
     $(INSTALL) -m 0755 $(@D)/finder-app/writer $(TARGET_DIR)/bin
     $(INSTALL) -m 0755 $(@D)/finder-app/finder-test.sh $(TARGET_DIR)/bin
     $(INSTALL) -m 0755 $(@D)/finder-app/finder.sh $(TARGET_DIR)/bin
-    $(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/bin
+    $(INSTALL) -d -m 0755 $(TARGET_DIR)/usr
+    $(INSTALL) -d -m 0755 $(TARGET_DIR)/usr/bin
+    $(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
     $(INSTALL) -m 0755 $(@D)/server/aesdsocket-start-stop $(TARGET_DIR)/etc/init.d/S99aesdsocket
     
 endef
