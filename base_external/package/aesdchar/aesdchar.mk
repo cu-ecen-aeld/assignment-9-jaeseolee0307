@@ -5,6 +5,10 @@
 #
 ##############################################################
 
+<<<<<<< HEAD:base_external/package/aesdchar/aesdchar.mk
+=======
+
+>>>>>>> parent of 399a7c9 (modify package):base_external/package/aesd-char/aesd-char.mk
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 AESDCHAR_VERSION = '375d3d5e2bd065beef703e9167a7d2b1784d18b2'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
